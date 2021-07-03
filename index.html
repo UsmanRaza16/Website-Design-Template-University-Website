@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/254f52a7a9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- --------------#region Header Start------------ -->
+
+    <section id="header">
+        <div class="header container">
+
+            <div class="header-top">
+
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+
+                <div class="navbar-menu" id="navbar-menu">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">course</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars bars" onclick="showMenu()"></i>
+            </div>
+            <div class="header-bottom">
+
+                <h1>World's Biggest University</h1>
+                <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS, and
+                    Javascript and you are good to go.</p>
+                <a href="" type="button">Visit Us to Know More</a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- --------------#endregion Course Start------------ -->
+
+    <section id="course">
+
+        <div class="course container">
+            <div class="course-top">
+
+                <h1>Courses We Offer</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+
+            <div class="course-bottom">
+
+                <div class="course-cards">
+
+                    <div class="course-card">
+                        <h2>Intermediate</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates quam repellat
+                            impedit accusamus sunt in, mollitia, cupiditate molestiae cumque magni, quia nemo sequi
+                            labore! Aspernatur numquam iste iusto esse.</p>
+
+                    </div>
+                    <div class="course-card">
+                        <h2>Degree</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates quam repellat
+                            impedit accusamus sunt in, mollitia, cupiditate molestiae cumque magni, quia nemo sequi
+                            labore! Aspernatur numquam iste iusto esse.</p>
+
+                    </div>
+                    <div class="course-card">
+                        <h2>Post Graduation</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates quam repellat
+                            impedit accusamus sunt in, mollitia, cupiditate molestiae cumque magni, quia nemo sequi
+                            labore! Aspernatur numquam iste iusto esse.</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- --------------------START--Javascript for toggle menu ------------------- -->
+    <script>
+        var menu = document.getElementById("navbar-menu");
+
+        function showMenu() {
+            menu.style.right = "0";
+
+        }
+
+        function hideMenu() {
+            menu.style.right = "-200px";
+
+        }
+    </script>
+    <!-- --------------------END--Javascript for toggle menu  ------------------- -->
+</body>
+
+</html>
