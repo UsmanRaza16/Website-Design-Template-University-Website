@@ -190,7 +190,9 @@
      
     
     }
-/* #endregion header *//* #region start course */
+/* #endregion header */
+
+/* #region start course */
 .course{
     flex-direction: column;
 
@@ -253,5 +255,84 @@
     padding: 10px;
     letter-spacing: 0.02rem;
 
-
 }
+
+/* #endregion course end */
+
+
+/* #region campus start */
+.campus{
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.campus-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    margin-top: 50px;
+}
+
+.campus-top h1{
+    font-weight: 700;
+    font-size: 2rem;
+    
+}
+.campus-top p{
+    font-weight: 200;
+    color: rgb(32, 28, 28);
+    font-size: 1rem;
+    margin: 15px;
+}
+
+.campus-bottom {
+    display: flex;
+}
+/* .campus-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.campus-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    height: 50%;
+    margin: 15px;
+    position: relative;
+    z-index: +1;
+    
+}
+.campus-card img::after{
+    content:'';
+    background-color: red;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+  
+  }
+
+.campus-card img{
+    border-radius:20px;
+}
+
+
+.campus-cards img:hover{
+  
+}
+
+
+
+
+/* #endregion campus start */
