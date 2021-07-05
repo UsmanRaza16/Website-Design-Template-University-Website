@@ -11,12 +11,39 @@
     display: flex;
     min-height: 100vh;
     margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.05rem;
+}
+.section-heading{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 150px;
+    color: rgb(32, 28, 28);
+    text-align: center;
+    
+}
+.section-subheading {
+    font-weight: 200;
+    color: rgb(32, 28, 28);
+    font-size: 1rem;
+    margin: 15px;
+}
+.section-bottom{
+    display: flex;
+    margin-top: 50px;
 }
 
 /* #region start header */
 
 #header .header{
-    flex-direction: column;
     width: 100%;
     background-image: url(images/banner.png);
     background-size: cover;
@@ -193,43 +220,13 @@
 /* #endregion header */
 
 /* #region start course */
-.course{
-    flex-direction: column;
-
-}
-
-.course-top{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: 0.05rem;
-}
-.course-top h1{
-    font-weight: 700;
-    font-size: 2rem;
-    margin-top: 150px;
-    
-}
-.course-top p{
-    font-weight: 200;
-    color: rgb(32, 28, 28);
-    font-size: 1rem;
-    margin: 15px;
-}
-
-
 .course-cards{
     display: flex;
     justify-content: space-between;
     text-align: center;
     width: 80%;
     margin: 0 auto;
-    
-
 }
-
-
 .course-card{
     display: flex;
     flex-direction: column;
@@ -243,61 +240,14 @@
     justify-content: center;
     transition: 0.1s ease box-shadow;
 }
-
 .course-card:hover{
     box-shadow: 0 0 40px 0 rgba(0,0,0,0.2)
 }
-
-.course-card h2{    letter-spacing: 0.09rem;}
-.course-card p{
-    
-    margin: 10px;
-    padding: 10px;
-    letter-spacing: 0.02rem;
-
-}
-
 /* #endregion course end */
 
 
+
 /* #region campus start */
-.campus{
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.campus-top{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: 0.05rem;
-    
-}
-
-.campus-top h1{
-    font-weight: 700;
-    font-size: 2rem;
-    
-}
-.campus-top p{
-    font-weight: 200;
-    color: rgb(32, 28, 28);
-    font-size: 1rem;
-    margin: 15px;
-}
-
-.campus-bottom {
-    display: flex;
-    margin-top: 50px;
-}
-/* .campus-cards{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 .campus-cards{
     display: flex;
@@ -353,5 +303,42 @@
 
 
 
-
 /* #endregion campus start */
+
+
+.facility-cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.facility-card{
+    display: flex;
+   flex-direction: column;    
+}
+
+
+.facility-card img{
+border-radius: 10px;   
+width:90%; /* you can use % */
+height: auto;
+ 
+}
+
+.facility-card h2{
+margin-top: 20px;
+text-align: left;
+    
+}
+
+.facility-card p{
+text-align: left;
+margin-top: 5px;
+width: 90%;
+letter-spacing: 0.05rem;    
+}
+/* #region facilities  */
+/* #endregion facilities */
