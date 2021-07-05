@@ -226,6 +226,7 @@
     text-align: center;
     width: 80%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 .course-card{
     display: flex;
@@ -239,6 +240,8 @@
     height: 500px;
     justify-content: center;
     transition: 0.1s ease box-shadow;
+    flex: 0 0 33.33;
+    
 }
 .course-card:hover{
     box-shadow: 0 0 40px 0 rgba(0,0,0,0.2)
@@ -251,13 +254,16 @@
 
 .campus-cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;  
+    flex-wrap: wrap;
 }
 
 .campus-card{
-    margin: 15px;
-    position: relative;
+    margin: 10px;
+    position: relative;    
+    flex: 0 0 30.33% ;
+
 }
 .layer{
     position: absolute;
@@ -305,6 +311,7 @@
 
 /* #endregion campus start */
 
+/* #region facilities  */
 
 .facility-cards{
     display: flex;
@@ -312,12 +319,15 @@
     text-align: center;
     width: 80%;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 
 .facility-card{
     display: flex;
    flex-direction: column;    
+   flex: 0 0 33.33%;
+   margin-top: 30px;
 }
 
 
@@ -340,5 +350,66 @@ margin-top: 5px;
 width: 90%;
 letter-spacing: 0.05rem;    
 }
-/* #region facilities  */
+
+
 /* #endregion facilities */
+
+
+/* region testimonial start */
+
+.testimonial-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.testimonial-card{
+    display: flex;
+    background-color: #f7ecea;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 45%;
+    margin-top: 20px;
+    
+}
+
+
+.testimonial-card img{
+border-radius: 50%;
+width: 300px;
+height: auto;
+margin-left: 20px;
+margin-top: -190px;
+padding: 10px;
+
+}
+.testimonial-card  .testimonial-review{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7ecea;
+    margin: 30px;
+    padding: 10px;
+
+}
+
+.testimonial-card  .testimonial-review p{
+width: 100%;
+margin-bottom: 15px;
+margin-top: -15px;
+color: rgb(32, 28, 28);
+font-weight: 200;
+line-height: 2rem;
+}
+.testimonial-card  .testimonial-review h3{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.testimonial-card .fa{
+    color: orange;
+}
+
+/* #endregion testimonial end */
