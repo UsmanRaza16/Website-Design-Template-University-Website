@@ -1,303 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <script src="https://kit.fontawesome.com/254f52a7a9.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
-    <!-- --------------#region Header Start------------ -->
-
-    <section id="header">
-        <div class="header container">
-
-            <div class="header-top">
-
-                <div class="logo">
-                    <img src="images/logo.png" alt="">
+    <!-- --------------Section Header------------ -->
+     <section id="header">
+        <div class="container-fluid">
+            <div class="wrapper  d-flex flex-column justify-content-center align-items-center">
+                <nav class="navbar navbar-expand-lg   m-2">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#"><img class="m .img-fluid" src="images/logo.png" alt=""></a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class=" text-white fa fa-bars" aria-hidden="true"></i>
+                          </button>
+                          <div class="collapse navbar-collapse  " id="navbarNav">
+                            <ul class="navbar-nav text-uppercase ms-auto  ">
+                              <li class="nav-item"><a class="text-white nav-link "  href="#">Home</a>
+                              </li>
+                              <li class="nav-item ">
+                                <a class="nav-link text-white" href="#">About</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white " href="#">Course</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#" >Blog</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#" >Contact</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                </nav>
+                <div class="bottom justify-content-center align-items-center text-white text-center d-flex flex-column">
+                    <h1 class="h1 .text-responsive">World's Biggest University</h1>
+                    <p class="h6">Making website is now one of the easiest thing in the world. 
+                        You just need to learn HTML, CSS, and Javascript and you are good to go.</p>
+                    <button type="button" class="p-md-3 btn btn-block text-white btn-link ">
+                        Visit Us to Know More
+                    </button>
                 </div>
-                
-                
-
-                <div class="navbar-menu" id="navbar-menu">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">course</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </div>
-                <i class="fas fa-bars bars" onclick="showMenu()"></i>
-            </div>
-            <div class="header-bottom">
-
-                <h1>World's Biggest University</h1>
-                <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS, and
-                    Javascript and you are good to go.</p>
-                <a href="" type="button">Visit Us to Know More</a>
-
             </div>
         </div>
-
     </section>
 
-    <!-- --------------#region Course Start------------ -->
-
+    <!-- --------------Section Course------------ -->
     <section id="course">
+        <div class="container-fluid course">
 
-        <div class="course container">
-            <div class="section-top">
-
-                <h1 class="section-heading">Courses We Offer</h1>
-                <p class="section-subheading">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
-
-            <div class="section-bottom">
-
-                <div class="course-cards">
-
-                    <div class="course-card">
-                        <h2>Intermediate</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates quam repellat
-                            impedit accusamus sunt in, mollitia, cupiditate molestiae cumque magni, quia nemo sequi
-                            labore! Aspernatur numquam iste iusto esse.</p>
-
-                    </div>
-                    <div class="course-card">
-                        <h2>Degree</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates quam repellat
-                            impedit accusamus sunt in, mollitia, cupiditate molestiae cumque magni, quia nemo sequi
-                            labore! Aspernatur numquam iste iusto esse.</p>
-
-                    </div>
-                    <div class="course-card">
-                        <h2>Post Graduation</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates quam repellat
-                            impedit accusamus sunt in, mollitia, cupiditate molestiae cumque magni, quia nemo sequi
-                            labore! Aspernatur numquam iste iusto esse.</p>
-
-                    </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-top d-flex justify-content-center align-items-center flex-column">
+                        <h1 class="h2">Courses We Offer</h1>
+                        <p class="h6 text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-
+                </div>
             </div>
 
+            <div class="row">
+                <div class="col-12">
 
-        </div>
+                    <div class="section-bottom  ">
+                        <div class="row d-flex justify-content-center  course-cards">
+                            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                              <div class="card course-card">
+                                <div class="card-body">
+                                  <h2 class="card-title text-center h2">Course 1</h2>
+                                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi veritatis nostrum, adipisci odio reiciendis sint beatae rem voluptatibus totam. Fugit facilis dolorem aut ad accusamus assumenda, recusandae dolorum tempora?</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                                <div class="card course-card">
+                                  <div class="card-body">
+                                    <h2 class="card-title text-center h2">Course 2</h2>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi veritatis nostrum, adipisci odio reiciendis sint beatae rem voluptatibus totam. Fugit facilis dolorem aut ad accusamus assumenda, recusandae dolorum tempora?</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                                <div class="card course-card">
+                                  <div class="card-body">
+                                    <h2 class="card-title text-center h2">Course 3</h2>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi veritatis nostrum, adipisci odio reiciendis sint beatae rem voluptatibus totam. Fugit facilis dolorem aut ad accusamus assumenda, recusandae dolorum tempora?</p>
+                                  </div>
+                                </div>
+                              </div>
 
+                              <div class="col-lg-4 col-md-6 col-sm-12 ">
+                                  <div class="card course-card">
+                                    <div class="card-body">
+                                      <h2 class="card-title text-center h2">Course 4</h2>
+                                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi veritatis nostrum, adipisci odio reiciendis sint beatae rem voluptatibus totam. Fugit facilis dolorem aut ad accusamus assumenda, recusandae dolorum tempora?</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                                    <div class="card course-card">
+                                      <div class="card-body">
+                                        <h2 class="card-title text-center h2">Course 5</h2>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi veritatis nostrum, adipisci odio reiciendis sint beatae rem voluptatibus totam. Fugit facilis dolorem aut ad accusamus assumenda, recusandae dolorum tempora?</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12 ">
+                                      <div class="card course-card">
+                                        <div class="card-body">
+                                          <h2 class="card-title text-center h2">Course 6</h2>
+                                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi veritatis nostrum, adipisci odio reiciendis sint beatae rem voluptatibus totam. Fugit facilis dolorem aut ad accusamus assumenda, recusandae dolorum tempora?</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                          </div>
 
+                </div>
+            </div>
+            
+            </div>
     </section>
 
-    <!-- --------------#Campus Start------------ -->
+    <!-- --------------Section Campus------------ -->
     <section id="campus">
-        <div class="container campus">
-            <div class="section-top">
-                <h1 class="section-heading">Our Global Campus</h1>
-                <p class="section-subheading">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div class="section-bottom">
-
-                <div class="campus-cards">
-
-                    <div class="campus-card">
-                        <img src="images/london.png" alt="">
-                        <div class="layer">
-                            <h3>London</h3>
-                        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-top mb-5 d-flex justify-content-center align-items-center flex-column">
+                        <h1 class="h2"> Our Global Campus</h1>    
+                        <p class="h6 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
-
-
-                    <div class="campus-card">
-                        <img src="images/newyork.png" alt="">
-                        <div class="layer">
-                            <h3>New York</h3>
-                        </div>
-                    </div>
-
-                    <div class="campus-card">
-                        <img src="images/washington.png" alt="">
-
-                        <div class="layer">
-                            <h3>Washington</h3>
-                        </div>
-
-
-
-                    </div>
-
                 </div>
             </div>
+            
+            <div class="section-bottom">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4 campus-cards ">
+                        <div class="campus-card">
+                            <img class ="img-fluid" src="images/london.png" alt="">
+                            <div class="layer">
+                                <h3>London</h3>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-4 col-sm-12 campus-cards">
+                        <div class="campus-card">
+                            <img class ="img-fluid" src="images/newyork.png" alt="">
+                            <div class="layer">
+                                <h3>New York</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-sm-12 col-lg-4 campus-cards">
+                        <div class="campus-card">
+                            <img class ="img-fluid" src="images/washington.png" alt="">
+                            <div class="layer">
+                                <h3>Washington</h3>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        
+                    
+                </div>
+            </div>
         </div>
-        </div>
+    </section> 
 
-    </section>
-
-    <!-- --------------#Facilities Start------------ -->
-
+    <!-- --------------Section Facilities------------ -->
     <section id=facility>
-
-        <div class="container facility">
-
-            <div class="section-top">
-
-                <h1 class="section-heading">Our Facilities</h1>
-                <p class="section-subheading">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-
-            </div>
-
-            <div class="section-bottom">
-
-                <div class="facility-cards">
-
-                    <div class="facility-card">
-                        <img src="images/library.png" alt="">
-                        <h2>World Class Library</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quam conseq</p>
-                    </div>
-
-
-
-
-
-
-                    <div class="facility-card">
-                        <img src="images/basketball.png" alt="">
-                        <h2>Largest Playground</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quam conseq</p>
-                    </div>
-
-                    <div class="facility-card">
-                        <img src="images/cafeteria.png" alt="">
-                        <h2>Tasty and Healthy Food</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quam conseq</p>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- --------------#Testimonials Start------------ -->
-    <section id="section">
-        <div class="testimonial container">
-            <div class="section-top">
-                <h1 class="section-heading">
-                    What Our Student Says
-                </h1>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-
-            </div>
-
-            <div class="section-bottom">
-                <div class="testimonial-cards">
-                    <div class="testimonial-card">
-
-                        <img src="images/user1.jpg" alt="">
-
-
-
-
-                        <div class="testimonial-review">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quasi laboriosam
-                                mollitia iure, illum eveniet. Corrupti eum iure labore dolore dignissimos sequi corporis
-                                aliquid, ut provident veniam molestias, aperiam neque.</p>
-                            <h3>Abu Bakar</h3>
-                            <div class="testimonial-stars">
-
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <img src="images/user2.jpg" alt="">
-                        <div class="testimonial-review">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quasi laboriosam
-                                mollitia iure, illum eveniet. Corrupti eum iure labore dolore dignissimos sequi corporis
-                                aliquid, ut provident veniam molestias, aperiam neque.</p>
-                            <h3>Saud-ur-Rehman</h3>
-                            <div class="testimonial-stars">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-half-o"></i>
-                            </div>
-                        </div>
+        <div class="container-fluid facility">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-top">
+                        <h1 class="section-heading">Our Facilities</h1>
+                        <p class="section-subheading">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
-
+           <div class="row">
+               <div class="col-12">
+                <div class="section-bottom">
+                    <div class=" row facility-cards">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card border-0 facility-card m-3">
+                                <div class="card-body">
+                                  <img class="mx-auto img-fluid " src="images/library.png" alt="">
+                                  <h2 class="card-title text-center h2">World Class Library</h2>
+                                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi veritatis nostrum, adipisci odio reiciendis sint beatae rem voluptatibus totam. Fugit facilis dolorem aut ad accusamus assumenda, recusandae dolorum tempora?</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card border-0 facility-card m-3">
+                                <div class="card-body">
+                                  <img class="mx-auto img-fluid " src="images/basketball.png" alt="">
+                                  <h2 class="card-title text-center h2">Largest Play Gorund</h2>
+                                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi veritatis nostrum, adipisci odio reiciendis sint beatae rem voluptatibus totam. Fugit facilis dolorem aut ad accusamus assumenda, recusandae dolorum tempora?</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card border-0 facility-card m-3">
+                                <div class="card-body">
+                                  <img class="mx-auto img-fluid " src="images/cafeteria.png" alt="">
+                                  <h2 class="card-title text-center h2">Tasty and Healthy Food</h2>
+                                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nisi veritatis nostrum, adipisci odio reiciendis sint beatae rem voluptatibus totam. Fugit facilis dolorem aut ad accusamus assumenda, recusandae dolorum tempora?</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+           </div>
         </div>
+    </section> 
 
-
-    </section>
-
-    <!-- --------------#Contact Start------------ -->
-    <footer id="contact">
-
-        <div class="container contact">
-
-            <div class="cta">
-
-                <img src="images/banner2.jpg" alt="">
+    <!-- --------------Section Testimonial------------ -->
+                            
+<div class="container-fluid">
+    <section id="testimonials" class="content-first">
+        
+            <div class="section-top">
+                <h1 class="text-center">What Our Student Say about us</h1>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in turpis quam. Nulla quis eleifend lectus.</p> 
+                <hr>
             </div>
 
+            <div class="section-bottom mt-3">
+                <div class="row">
 
-            <div class="contact-text">
+                    <!-- TESTIMONIAL 1 - START -->
+                    <div class="col-sm-12 col-lg-6 col-md-12 col-xl-4">
+                        <div class="testimonial-card mx-auto">
+                            <a class="pull-left" href="#"><img class="mx-auto img-fluid d-block" src="images/user1.jpg" alt=""></a>
 
-                <h1>Enroll For Our Online Courses</h1>
-                <h2>Anywhere From The World</h2>
-                <a href="#" type="button">contact us</a>
+                            <div class="testimonial-card-body m-4 mx-auto">
+                                <h2 class="h2">Abu Bakar</h2>
+                                <h6 class="h6  text-black-50" >Webdesigner</h6>
+                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed volutpat est. Donec lobortis interdum volutpat. Maecenas bibendum dui quis pharetra tincidunt. Praesent posuere eu velit at scelerisque.</p>
+                                
+                            </div>
 
+                        </div>
+                    </div>
+                    <!-- TESTIMONIAL 1 - END -->
+                    
+                    <!-- TESTIMONIAL 2 - START -->
+                    <div class="col-sm-12 col-lg-6 col-xl-4">
+                        <div class="testimonial-card mx-auto">
+                            <a class="pull-left" href="#"><img class="mx-auto img-fluid d-block" src="images/user2.jpg" alt=""></a>
 
+                            <div class="testimonial-card-body m-4 mx-auto">
+                                <h2 class="h2">Saud</h2>
+                                <h6 class="h6  text-black-50" >Webdesigner</h6>
+                                <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed volutpat est. Donec lobortis interdum volutpat. Maecenas bibendum dui quis pharetra tincidunt. Praesent posuere eu velit at scelerisque.</p>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- TESTIMONIAL 3 - START -->
+                    <div class="col-sm-12 col-lg-6 col-xl-4">
+                        <div class="testimonial-card mx-auto">
+                            <a class="pull-left" href="#"><img class="mx-auto img-fluid d-block" src="images/user2.jpg" alt=""></a>
+
+                            <div class="testimonial-card-body m-4 mx-auto">
+                                <h2 class="h2">Usman</h2>
+                                <h6 class="h6  text-black-50" >Webdesigner</h6>
+                                <p class ="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed volutpat est. Donec lobortis interdum volutpat. Maecenas bibendum dui quis pharetra tincidunt. Praesent posuere eu velit at scelerisque.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </div>
+        </section>
+    </div>                    
 
-    </footer>
 
-    <!-- --------------#Footer Start------------ -->
-
-    <section id="footer">
-
-        <div class="footer">
-
-            <h1 class="section-heading">About Us</h1>
-
-            <p class="section-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eaque nobis
-                labore id iusto qui nesciunt accusamus, harum molestiae esse rem nostrum porro distinctio sed doloribus
-                temporibus, beatae quisquam? Facilis?</p>
-
-            <div class="icons">
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
-                <a href="https://www.twitter.com" target="_blank"> <i class="fab fa-twitter fa-lg"></i></a>
-                <a href="https://www.instagram.com" target="_blank"></a><i class="fab fa-instagram fa-lg"></i>
-                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
-            </div>
-        </div>
-
-    </section>
 
 
     <!-- --------------------START--Javascript for toggle menu ------------------- -->
