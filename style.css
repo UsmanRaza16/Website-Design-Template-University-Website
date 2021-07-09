@@ -25,6 +25,8 @@
     font-family: 'Poppins';
 }
 
+
+/*-------------------------------------- Mobile REGION ---------------------------------*/
 @media (max-width: 576px) {
 .section-top {    margin-top: 6em;}
 .section-top h1 {
@@ -222,17 +224,19 @@
 
 /*#region contact*/
 .contact {
-    margin-top: 5em;
-    margin-bottom:5em ;
+    margin-top: 3em;
+    margin-bottom:3em ;
 }
 .wrapper2{
     position: relative;
     background-image: url('images/banner2.jpg');
     background-size: cover;
-    height: 15vh;
+    height: 30vh;
     margin: 0 auto;
     color: white;
     width: 90%;
+    z-index: +1;
+    
 }
 .wrapper2::after{
     content:"";
@@ -243,6 +247,7 @@
     top: 0;
     left: 0;
     opacity: 0.7;
+    z-index: -1;
 }
 .contact-text {
     transform: translate(0%, 25%);
@@ -255,18 +260,20 @@
     padding: 1em;
 }
 .contact-text h2 {
-    font-size: medium;
+    font-size: small;
     font-weight: 500;
     letter-spacing: 0.05rem;
     padding: 1em;
+    margin-top: -1em;
 }
 .contact-text button {
     font-weight: 200;
     cursor: pointer;
     transition: 0.3s ease all;
-    font-size: small;
+    font-size: smaller;
     width: 50%;
     border: 1px solid white;
+    
 }
 .contact-text button:hover {    background-color: crimson;  }
 /*#endregion contact*/
@@ -294,13 +301,7 @@
 /* #endregion footer */
 }
 
-
-
 /*-------------------------------------- DESKTOP/TABLET REGION ---------------------------------*/
-
-
-
-
 
 @media (min-width: 577px) {  /*--------Screen size >=577px----------*/
     .section-top{margin-top:5em;}
@@ -314,15 +315,13 @@
     .section-top p {text-align:center;color:grey;}
 
 
-
 /* #region header */
     .wrapper {
         height: 100vh;
         background-image: url('images/banner.png');
         background-size: cover;
+        position: relative;
     }
-
-
     .wrapper::after {
         content: '';
         background-color: black;
@@ -333,15 +332,28 @@
         width: 100%;
         opacity: 0.7;
     }
-
+    .navigation{
+        z-index: 1;
+    }
+    .navigation::after {
+        content: '';
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    
+    nav{z-index: 1; position: absolute;top: 0; left: 0;}
     .navbar .navbar-brand img {
         width: 60%;
     }
-
     .navbar li {
         margin-right: 10px;
     }
-
     .navbar li:after {
         content: '';
         width: 0%;
@@ -351,12 +363,9 @@
         margin: auto;
         transition: 0.3s ease width;
     }
-
     .navbar li:hover::after {
         width: 100%;
     }
-
-
     .wrapper .bottom {
         position: absolute;
         top: 50%;
@@ -364,19 +373,16 @@
         transform: translate(-50%, -50%);
         z-index: 1;
     }
-
     .wrapper .bottom h1 {
         font-size: calc(100% + 3vw);
         margin-bottom: 0.5em;
         font-weight: 700;
     }
-
     .wrapper .bottom p {
         font-weight: 200;
         width: 80%;
         color: grey;
     }
-
     .wrapper .bottom button {
         border: 0.05em solid white;
         text-decoration: none;
@@ -385,12 +391,10 @@
         padding: 1em;
         font-weight: 200;
     }
-
     .wrapper .bottom button:hover {
         border: 1px solid white;
         background: crimson;
     }
-
     /* #endregion header */
 
 /* #region start course */
@@ -558,10 +562,11 @@
     position: relative;
     background-image: url('images/banner2.jpg');
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
     margin: 0 auto;
     color: white;
     width: 80%;
+    z-index: +1;
 }
 .wrapper2::after{
     content:"";
@@ -572,6 +577,7 @@
     top: 0;
     left: 0;
     opacity: 0.7;
+    z-index: -1;
 }
 .contact-text {transform:translate(0%,50%);z-index:+1;}
 .contact-text h1 {
@@ -579,12 +585,14 @@
     font-weight: 700;
     letter-spacing: 0.05rem;
     padding: 1em;
+    margin-top: -1em;
 }
 .contact-text h2 {
     font-size: larger;
     font-weight: 700;
     letter-spacing: 0.05rem;
     padding: 1em;
+    margin-top: -2em;
 }
 .contact-text button {
     font-weight: 200;
@@ -592,6 +600,7 @@
     transition: 0.3s ease all;
     font-size: large;
     width: 25%;
+    border: 1px solid white;
 }
 .contact-text button:hover {    background-color: crimson;
 }
